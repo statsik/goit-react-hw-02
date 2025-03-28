@@ -5,13 +5,6 @@ const Options = ({ count, setCount, totalFeedback }) => {
         [feedbackType]: count[feedbackType] + 1,
         });
     }
-    const resetFeedback = () => {
-    setCount({
-      good: 0,
-      neutral: 0,
-      bad: 0,
-    });
-  };
     return (
         <div className="buttons">
             <button onClick={() => updateFeedback('good')}>Good</button>
